@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+BUILD_DIR=$1
+CACHE_DIR=$2
+
+cd $BUILD_DIR
+bin/alembic upgrade head
+
+# Note: see https://github.com/hammady/heroku-buildpack-smartmigrate/blob/master/bin/compile
+# for a possibly better strategy.

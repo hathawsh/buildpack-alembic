@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+BUILD_DIR=$1
+
+[[ -f $BUILD_DIR/bin/alembic ]] || exit 1
+
+echo "Alembic migration"
